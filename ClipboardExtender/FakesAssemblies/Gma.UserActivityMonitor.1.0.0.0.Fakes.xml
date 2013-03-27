@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gma.UserActivityMonitor.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider">
+            <summary>Shim type of Gma.UserActivityMonitor.GlobalEventProvider</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.#ctor(Gma.UserActivityMonitor.GlobalEventProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.CanRaiseEventsGet">
+            <summary>Sets the shim of GlobalEventProvider.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.Constructor">
+            <summary>Sets the shim of GlobalEventProvider.GlobalEventProvider()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.HookManager_KeyDownObjectKeyEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_KeyDown(Object sender, KeyEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.HookManager_KeyPressObjectKeyPressEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_KeyPress(Object sender, KeyPressEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.HookManager_KeyUpObjectKeyEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_KeyUp(Object sender, KeyEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.HookManager_MouseClickExtObjectMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseClickExt(Object sender, MouseEventExtArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.HookManager_MouseClickObjectMouseEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseClick(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.HookManager_MouseDoubleClickObjectMouseEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseDoubleClick(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.HookManager_MouseDownObjectMouseEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseDown(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.HookManager_MouseMoveExtObjectMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseMoveExt(Object sender, MouseEventExtArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.HookManager_MouseMoveObjectMouseEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseMove(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.HookManager_MouseUpObjectMouseEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseUp(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.KeyDownAddKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.KeyDownRemoveKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.KeyPressAddKeyPressEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.KeyPressRemoveKeyPressEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.KeyUpAddKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.KeyUpRemoveKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseClickAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseClickExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseClickExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseClickRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseDoubleClickAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseDoubleClickRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseDownAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseDownRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseMoveAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseMoveExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseMoveExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseMoveRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseUpAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.MouseUpRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_KeyDownAddKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_KeyDownRemoveKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_KeyPressAddKeyPressEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_KeyPressRemoveKeyPressEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_KeyUpAddKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_KeyUpRemoveKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseClickAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseClickExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseClickExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseClickRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseDoubleClickAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseDoubleClickRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseDownAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseDownRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseMoveAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseMoveExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseMoveExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseMoveRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseUpAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.m_MouseUpRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="T:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.CanRaiseEventsGet">
+            <summary>Sets the shim of GlobalEventProvider.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.HookManager_KeyDownObjectKeyEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_KeyDown(Object sender, KeyEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.HookManager_KeyPressObjectKeyPressEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_KeyPress(Object sender, KeyPressEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.HookManager_KeyUpObjectKeyEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_KeyUp(Object sender, KeyEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.HookManager_MouseClickExtObjectMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseClickExt(Object sender, MouseEventExtArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.HookManager_MouseClickObjectMouseEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseClick(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.HookManager_MouseDoubleClickObjectMouseEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseDoubleClick(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.HookManager_MouseDownObjectMouseEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseDown(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.HookManager_MouseMoveExtObjectMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseMoveExt(Object sender, MouseEventExtArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.HookManager_MouseMoveObjectMouseEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseMove(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.HookManager_MouseUpObjectMouseEventArgs">
+            <summary>Sets the shim of GlobalEventProvider.HookManager_MouseUp(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.KeyDownAddKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.KeyDownRemoveKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.KeyPressAddKeyPressEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.KeyPressRemoveKeyPressEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.KeyUpAddKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.KeyUpRemoveKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseClickAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseClickExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseClickExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseClickRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseDoubleClickAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseDoubleClickRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseDownAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseDownRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseMoveAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseMoveExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseMoveExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseMoveRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseUpAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.MouseUpRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_KeyDownAddKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_KeyDownRemoveKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_KeyPressAddKeyPressEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_KeyPressRemoveKeyPressEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_KeyUpAddKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_KeyUpRemoveKeyEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseClickAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseClickExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseClickExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseClickRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseDoubleClickAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseDoubleClickRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseDownAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseDownRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseMoveAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseMoveExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseMoveExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseMoveRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseUpAddMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.add_m_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimGlobalEventProvider.AllInstances.m_MouseUpRemoveMouseEventHandler">
+            <summary>Sets the shim of GlobalEventProvider.remove_m_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="T:Gma.UserActivityMonitor.Fakes.ShimHookManager">
+            <summary>Shim type of Gma.UserActivityMonitor.HookManager</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimHookManager.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimHookManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimHookManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.DoubleClickTimeElapsedObjectEventArgs">
+            <summary>Sets the shim of HookManager.DoubleClickTimeElapsed(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.EnsureSubscribedToGlobalKeyboardEvents">
+            <summary>Sets the shim of HookManager.EnsureSubscribedToGlobalKeyboardEvents()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.EnsureSubscribedToGlobalMouseEvents">
+            <summary>Sets the shim of HookManager.EnsureSubscribedToGlobalMouseEvents()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.ForceUnsunscribeFromGlobalKeyboardEvents">
+            <summary>Sets the shim of HookManager.ForceUnsunscribeFromGlobalKeyboardEvents()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.ForceUnsunscribeFromGlobalMouseEvents">
+            <summary>Sets the shim of HookManager.ForceUnsunscribeFromGlobalMouseEvents()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.KeyDownAddKeyEventHandler">
+            <summary>Sets the shim of HookManager.add_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.KeyDownRemoveKeyEventHandler">
+            <summary>Sets the shim of HookManager.remove_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.KeyPressAddKeyPressEventHandler">
+            <summary>Sets the shim of HookManager.add_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.KeyPressRemoveKeyPressEventHandler">
+            <summary>Sets the shim of HookManager.remove_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.KeyUpAddKeyEventHandler">
+            <summary>Sets the shim of HookManager.add_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.KeyUpRemoveKeyEventHandler">
+            <summary>Sets the shim of HookManager.remove_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.KeyboardHookProcInt32Int32IntPtr">
+            <summary>Sets the shim of HookManager.KeyboardHookProc(Int32 nCode, Int32 wParam, IntPtr lParam)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseClickAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseClickExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of HookManager.add_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseClickExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of HookManager.remove_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseClickRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseDoubleClickAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseDoubleClickRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseDownAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseDownRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseHookProcInt32Int32IntPtr">
+            <summary>Sets the shim of HookManager.MouseHookProc(Int32 nCode, Int32 wParam, IntPtr lParam)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseMoveAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseMoveExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of HookManager.add_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseMoveExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of HookManager.remove_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseMoveRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseUpAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseUpRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseWheelAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_MouseWheel(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.MouseWheelRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_MouseWheel(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.OnMouseUpObjectMouseEventArgs">
+            <summary>Sets the shim of HookManager.OnMouseUp(Object sender, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.TryUnsubscribeFromGlobalKeyboardEvents">
+            <summary>Sets the shim of HookManager.TryUnsubscribeFromGlobalKeyboardEvents()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.TryUnsubscribeFromGlobalMouseEvents">
+            <summary>Sets the shim of HookManager.TryUnsubscribeFromGlobalMouseEvents()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_KeyDownAddKeyEventHandler">
+            <summary>Sets the shim of HookManager.add_s_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_KeyDownRemoveKeyEventHandler">
+            <summary>Sets the shim of HookManager.remove_s_KeyDown(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_KeyPressAddKeyPressEventHandler">
+            <summary>Sets the shim of HookManager.add_s_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_KeyPressRemoveKeyPressEventHandler">
+            <summary>Sets the shim of HookManager.remove_s_KeyPress(KeyPressEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_KeyUpAddKeyEventHandler">
+            <summary>Sets the shim of HookManager.add_s_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_KeyUpRemoveKeyEventHandler">
+            <summary>Sets the shim of HookManager.remove_s_KeyUp(KeyEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseClickAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_s_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseClickExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of HookManager.add_s_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseClickExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of HookManager.remove_s_MouseClickExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseClickRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_s_MouseClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseDoubleClickAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_s_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseDoubleClickRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_s_MouseDoubleClick(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseDownAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_s_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseDownRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_s_MouseDown(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseMoveAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_s_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseMoveExtAddEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of HookManager.add_s_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseMoveExtRemoveEventHandlerOfMouseEventExtArgs">
+            <summary>Sets the shim of HookManager.remove_s_MouseMoveExt(EventHandler`1&lt;MouseEventExtArgs&gt; value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseMoveRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_s_MouseMove(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseUpAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_s_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseUpRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_s_MouseUp(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseWheelAddMouseEventHandler">
+            <summary>Sets the shim of HookManager.add_s_MouseWheel(MouseEventHandler value)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimHookManager.s_MouseWheelRemoveMouseEventHandler">
+            <summary>Sets the shim of HookManager.remove_s_MouseWheel(MouseEventHandler value)</summary>
+        </member>
+        <member name="T:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs">
+            <summary>Shim type of Gma.UserActivityMonitor.MouseEventExtArgs</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.#ctor(Gma.UserActivityMonitor.MouseEventExtArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.ConstructorMouseButtonsInt32Int32Int32Int32">
+            <summary>Sets the shim of MouseEventExtArgs.MouseEventExtArgs(MouseButtons buttons, Int32 clicks, Int32 x, Int32 y, Int32 delta)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.ConstructorMouseEventArgs">
+            <summary>Sets the shim of MouseEventExtArgs.MouseEventExtArgs(MouseEventArgs e)</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.HandledGet">
+            <summary>Sets the shim of MouseEventExtArgs.get_Handled()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.HandledSetBoolean">
+            <summary>Sets the shim of MouseEventExtArgs.set_Handled(Boolean value)</summary>
+        </member>
+        <member name="T:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.AllInstances.HandledGet">
+            <summary>Sets the shim of MouseEventExtArgs.get_Handled()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.ShimMouseEventExtArgs.AllInstances.HandledSetBoolean">
+            <summary>Sets the shim of MouseEventExtArgs.set_Handled(Boolean value)</summary>
+        </member>
+        <member name="T:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider">
+            <summary>Stub type of Gma.UserActivityMonitor.GlobalEventProvider</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.AttachBackingFieldToSite">
+            <summary>Attaches delegates to emulate StubGlobalEventProvider.Site as a property with a backing field.</summary>
+        </member>
+        <member name="F:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.CanRaiseEventsGet">
+            <summary>Sets the stub of GlobalEventProvider.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.Dispose(System.Boolean)">
+            <summary>Sets the stub of Component.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.DisposeBoolean">
+            <summary>Sets the stub of Component.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.GetService(System.Type)">
+            <summary>Sets the stub of Component.GetService(Type service)</summary>
+        </member>
+        <member name="F:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.GetServiceType">
+            <summary>Sets the stub of Component.GetService(Type service)</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubGlobalEventProvider</summary>
+        </member>
+        <member name="F:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.SiteGet">
+            <summary>Sets the stub of Component.get_Site()</summary>
+        </member>
+        <member name="F:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.SiteSetISite">
+            <summary>Sets the stub of Component.set_Site(ISite value)</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.ToString">
+            <summary>Sets the stub of Component.ToString()</summary>
+        </member>
+        <member name="F:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.ToString01">
+            <summary>Sets the stub of Component.ToString()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.CanRaiseEvents">
+            <summary>Sets the stub of GlobalEventProvider.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.StubGlobalEventProvider.Site">
+            <summary>Sets the stub of Component.get_Site()</summary>
+        </member>
+        <member name="T:Gma.UserActivityMonitor.Fakes.StubMouseEventExtArgs">
+            <summary>Stub type of Gma.UserActivityMonitor.MouseEventExtArgs</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.StubMouseEventExtArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Gma.UserActivityMonitor.Fakes.StubMouseEventExtArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubMouseEventExtArgs</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.StubMouseEventExtArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.StubMouseEventExtArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Gma.UserActivityMonitor.Fakes.StubMouseEventExtArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
