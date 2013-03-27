@@ -9,3 +9,6 @@ Done:
 Need to be done:
 - Set up global keyboard hooks (class already built)
 - Set up storage of multiple clipboard elements
+
+
+Global hooks not working. Doesnt recognize when Modifiers are pressed (ctrl, alt, shift)
