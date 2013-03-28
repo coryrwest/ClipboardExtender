@@ -16,8 +16,8 @@ namespace ClipboardExtender
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            ApplicationContext trayContext = new TrayApplicationContext();
-            Application.Run(trayContext);
+            //ApplicationContext trayContext = new TrayApplicationContext();
+            Application.Run(new SettingsForm());
         }
     }
 }

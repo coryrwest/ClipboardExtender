@@ -1,4 +1,5 @@
-﻿using MouseKeyboardActivityMonitor;
+﻿using System.Diagnostics;
+using MouseKeyboardActivityMonitor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,12 +10,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MouseKeyboardActivityMonitor.WinApi;
+using System.Runtime.InteropServices;
 
 namespace ClipboardExtender
 {
     class TrayApplicationContext : ApplicationContext
     {
         private KeyboardHookListener _keyboardHookListener;
+
         NotifyIcon _notifyIcon;
         System.ComponentModel.IContainer components;
         const string DefaultTooltip = "ClipboardExtender";
@@ -22,7 +25,6 @@ namespace ClipboardExtender
         public TrayApplicationContext()
         {
             InitializeContext();
-            ActivateHook();
         }
 
         public void ActivateHook()
@@ -60,14 +62,6 @@ namespace ClipboardExtender
             _notifyIcon.MouseUp += notifyIcon_MouseUp;
         }
 
-        readonly Timer _timer = new Timer();
-        void Timer()
-        {
-            _timer.Interval = 1000;
-            _timer.Tick += timer_Tick;
-            _timer.Enabled = false;
-        }
-
         private void ShowSettingsForm()
         {
             if (settingsForm == null)
@@ -78,31 +72,6 @@ namespace ClipboardExtender
             else
             {
                 settingsForm.Activate();
-            }
-        }
-
-        private void CheckClipboard()
-        {
-            bool clipBoardChanged = false;
-            string currentClipboardText = "";
-            string clipboardText;
-
-            if (Clipboard.ContainsText(TextDataFormat.Text))
-            {
-                clipboardText = Clipboard.GetText(TextDataFormat.Text);
-                if (clipboardText != currentClipboardText)
-                {
-                    clipBoardChanged = true;
-                    currentClipboardText = clipboardText;
-                }
-            }
-            else if (Clipboard.ContainsText(TextDataFormat.Html))
-            {
-                clipboardText = Clipboard.GetText(TextDataFormat.Html);
-                if (clipboardText != currentClipboardText)
-                {
-                    clipBoardChanged = true;
-                }
             }
         }
 
@@ -130,11 +99,6 @@ namespace ClipboardExtender
         private void quit_Click(object sender, EventArgs e)
         {
             ExitThread();
-        }
-
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            CheckClipboard();
         }
         #endregion
 
