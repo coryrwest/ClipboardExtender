@@ -21,6 +21,7 @@ namespace ClipboardExtender
         NotifyIcon _notifyIcon;
         System.ComponentModel.IContainer components;
         const string DefaultTooltip = "ClipboardExtender";
+        public ClipboardMonitor clipboardMonitor;
 
         public TrayApplicationContext()
         {
@@ -62,16 +63,16 @@ namespace ClipboardExtender
             _notifyIcon.MouseUp += notifyIcon_MouseUp;
         }
 
-        private void ShowSettingsForm()
+        private void ShowClipboardMonitor()
         {
-            if (settingsForm == null)
+            if (clipboardMonitor == null)
             {
-                settingsForm = new SettingsForm();
-                settingsForm.ShowDialog();
+                clipboardMonitor = new ClipboardMonitor();
+                clipboardMonitor.Show();
             }
             else
             {
-                settingsForm.Activate();
+                clipboardMonitor.Show();
             }
         }
 
@@ -79,7 +80,7 @@ namespace ClipboardExtender
 
         private void settings_click(object sender, EventArgs e)
         {
-            ShowSettingsForm();
+            ShowClipboardMonitor();
         }
 
         private void notifyIcon_MouseUp(object sender, MouseEventArgs e)
@@ -93,7 +94,7 @@ namespace ClipboardExtender
 
         private void notifyIcon_DoubleClick(object sender, EventArgs e)
         {
-            ShowSettingsForm();
+            ShowClipboardMonitor();
         }
 
         private void quit_Click(object sender, EventArgs e)
@@ -103,7 +104,6 @@ namespace ClipboardExtender
         #endregion
 
         #region Helpers and Overrides
-        public SettingsForm settingsForm;
 
         protected override void Dispose(bool disposing)
         {
@@ -113,8 +113,8 @@ namespace ClipboardExtender
 
         protected override void ExitThreadCore()
         {
-            if (settingsForm != null)
-                settingsForm.Close();
+            if (clipboardMonitor != null)
+                clipboardMonitor.Close();
 
             _notifyIcon.Visible = false;
             base.ExitThreadCore();

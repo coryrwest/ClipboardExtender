@@ -8,7 +8,8 @@ Done:
 
 Need to be done:
 - Set up global keyboard hooks (class already built)
-- Set up storage of multiple clipboard elements
-
+- tie in storage of multiple clipboard elements
+- fade out notifications
+- get clipboardmonitor to show on clipboard change.
 
 Global hooks not working. Doesnt recognize when Modifiers are pressed (ctrl, alt, shift)
