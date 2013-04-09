@@ -14,6 +14,8 @@ namespace ClipboardExtender
 {
     public partial class ClipboardMonitor : Form
     {
+        private string Clip = "";
+
         public ClipboardMonitor()
         {
             InitializeComponent();
@@ -21,8 +23,13 @@ namespace ClipboardExtender
             Location = new Point(Screen.PrimaryScreen.WorkingArea.Right - this.Width, Screen.PrimaryScreen.WorkingArea.Bottom - this.Height);
             RegisterClipboardViewer();
             Closing += SettingsForm_Closing;
-            StartTimer3Sec();
             t.Tick += t_Tick;
+        }
+
+        private void ClipboardMonitor_Activated(object sender, EventArgs e)
+        {
+            
+            StartTimer3Sec();
         }
 
         void SettingsForm_Closing(object sender, CancelEventArgs e)
@@ -53,6 +60,10 @@ namespace ClipboardExtender
             try
             {
                 iData = Clipboard.GetDataObject();
+                if (iData != null)
+                {
+                    Clip = iData.GetData(DataFormats.Text).ToString();
+                }
             }
             catch (ExternalException externEx)
             {
@@ -76,9 +87,15 @@ namespace ClipboardExtender
             }
         }
 
+        public string GetClip()
+        {
+            return Clip;
+        }
+
         void t_Tick(object sender, EventArgs e)
         {
             this.Hide();
+            StopTimer();
         }
 
         protected override void WndProc(ref Message m)
@@ -163,6 +180,10 @@ namespace ClipboardExtender
         {
             t.Interval = 3000;
             t.Start();
+        }
+        public void StopTimer()
+        {
+            t.Stop();
         }
 
         string[] formatsAll = new string[] 

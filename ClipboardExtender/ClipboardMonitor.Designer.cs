@@ -33,23 +33,24 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(-1, 1);
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(285, 81);
+            this.textBox1.Size = new System.Drawing.Size(285, 58);
             this.textBox1.TabIndex = 0;
             // 
             // ClipboardMonitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 93);
+            this.ClientSize = new System.Drawing.Size(313, 87);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClipboardMonitor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Settings";
+            this.Activated += new System.EventHandler(this.ClipboardMonitor_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 

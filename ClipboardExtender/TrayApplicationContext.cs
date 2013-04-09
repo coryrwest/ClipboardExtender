@@ -1,16 +1,10 @@
-﻿using System.Diagnostics;
-using MouseKeyboardActivityMonitor;
+﻿using MouseKeyboardActivityMonitor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MouseKeyboardActivityMonitor.WinApi;
-using System.Runtime.InteropServices;
 
 namespace ClipboardExtender
 {
@@ -22,26 +16,29 @@ namespace ClipboardExtender
         System.ComponentModel.IContainer components;
         const string DefaultTooltip = "ClipboardExtender";
         public ClipboardMonitor clipboardMonitor;
+        ClipboardStorage clips = new ClipboardStorage();
+
 
         public TrayApplicationContext()
         {
             InitializeContext();
+            ActivateHook();
         }
 
         public void ActivateHook()
         {
             _keyboardHookListener = new KeyboardHookListener(new GlobalHooker());
             _keyboardHookListener.Enabled = true;
-            _keyboardHookListener.KeyDown += _keyboardHookListener_KeyUp;
+            _keyboardHookListener.KeyUp += _keyboardHookListener_KeyUp;
         }
 
         void _keyboardHookListener_KeyUp(object sender, KeyEventArgs e)
         {
-            Console.WriteLine(e.Modifiers);
-
-            if ((e.Control && e.Shift) && e.KeyCode == Keys.X)
+            if (Control.ModifierKeys == (Keys.Control) && (e.KeyCode == Keys.X | e.KeyCode == Keys.C))
             {
-                Console.Beep();
+                ShowClipboardMonitor();
+                string Clip = clipboardMonitor.GetClip();
+                clips.AddClip(Clip);
             }
         }
 
